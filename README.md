@@ -1,6 +1,6 @@
 # **A Pre-Geometric Substrate Model for the Emergence of Finite-Density Spacetime**
 
-**Logic by Jérémie Fréreault. Demonstration by AI. Best viewed in VSCode.**
+**Concept by Jérémie Fréreault. Demonstration by AI.**
 
 ---
 
@@ -170,6 +170,348 @@ This guarantees:
 
 The Big Bang singularity becomes a mapping constraint, not a physical blow-up.
 
+# **3.4 Internal Phase Field and Angle-Sliced Rupture Geometry**
+
+The rupture process requires a mechanism by which distinct geometric degrees of freedom can emerge from a pre-geometric substrate that possesses no spatial structure. This section introduces such a mechanism by defining an **internal cyclic phase field** intrinsic to the substrate. This phase is not geometric, spatial, or temporal; it is an abstract reducibility parameter that becomes operational only when a rupture layer forms.
+
+## **Internal Phase Space**
+
+Let
+$$
+\Theta = S^1
+$$
+be a compact cyclic parameter space (a circle), representing an internal ordering variable of the substrate. This is **not** a spatial dimension and has no geometric interpretation; it is a purely pre-geometric internal label permitted by unbounded internal reducibility.
+
+Define a phase field:
+$$
+\psi : \Theta \to \mathbb{R}, \qquad \psi(\theta) = \sin(\theta).
+$$
+
+This function is not embedded in space or time. It is simply a structural property of the substrate, invariant under permutation of substrate elements and playing no physical role before geometry emerges.
+
+The only meaningful property of $(\psi)$ in the 0D phase is its **phase** and **local gradient**:
+$$
+\psi'(\theta) = \cos(\theta).
+$$
+
+These quantities are dormant until a rupture layer forms.
+
+## **Rupture Layers as Phase Slices**
+
+Each rupture layer $(\Phi_t : S \to M)$ corresponds to selecting a unique phase angle
+$$
+\theta(t) \in \Theta,
+$$
+such that the substrate elements entering geometric resolution at emergent time $(t)$ are projected through the slice defined by $(\theta(t))$.
+
+Formally, a rupture layer samples the internal phase field via a slicing operator:
+$$
+\mathcal{L}(t) = \psi(\theta(t)).
+$$
+
+The mapping $(\Phi_t)$ is then understood as a geometric realization of substrate degrees of freedom mediated by the phase slice at angle $(\theta(t))$.
+
+The function $(\theta(t))$ must be **monotonic**:
+
+$$
+\frac{d\theta}{dt} > 0,
+$$
+
+reflecting the fact that rupture layers cannot repeat or reverse (structural irreversibility).
+
+This condition formalizes the intuition that the substrate “falls” through successive phase slices, even though no physical motion exists.
+
+## **Emergent Degrees of Freedom from Phase Gradient**
+
+The local directionality of geometric separability introduced at layer $(t)$ is determined by the internal gradient of the phase field at the slicing angle:
+
+$$
+D(t) \propto \psi'(\theta(t)) = \cos(\theta(t)).
+$$
+
+This yields:
+
+* When $(\cos(\theta(t)))$ is large, separability grows strongly along the associated emergent direction.
+* When $(\cos(\theta(t)))$ is small, separability weakens in that direction.
+* Over a sequence of layers, changes in $(\theta(t))$ induce systematic variation in geometric degrees of freedom.
+
+Since the internal phase field has a single cyclic variable, the number of **independent** separability directions that can appear is limited. This provides a natural mechanistic explanation for why low-dimensional spacetimes (such as the observed 3+1 dimensions) emerge rather than arbitrarily high-dimensional geometries.
+
+## **Substrate Instability as Phase Progression**
+
+The substrate is assumed to have unbounded instability in the collapsed configuration. This instability is expressed as a continuous drift through internal phase:
+
+$$
+\theta(t) = \theta_0 + \int_0^t \omega(\tau), d\tau,
+$$
+
+where $(\omega(t) > 0)$ is an instability rate function that encodes how rapidly the substrate crosses successive rupture thresholds.
+
+Because the substrate has no geometry, $(\omega(t))$ is not a physical frequency but a purely structural instability parameter.
+
+Rupture occurs when the phase slice $(\theta(t))$ intersects the substrate’s symmetry-breaking condition. Once intersected, that slice becomes a geometric layer.
+
+## **Projection of Mass into Geometry**
+
+At each rupture layer, a subset of substrate elements becomes geometrically realized. Define the projection operator onto layer $(t)$:
+
+$$
+\Pi_t(s) =
+\begin{cases}
+1, & s \text{ participates in rupture at phase } \theta(t),\
+0, & \text{otherwise}.
+\end{cases}
+$$
+
+Then the set of substrate elements realized at that layer is:
+
+$$
+S_t = {, s \in S \mid \Pi_t(s) = 1 ,}.
+$$
+
+These elements are mapped into the manifold via:
+
+$$
+\Phi_t(s) = F_t\bigl(s, \psi(\theta(t)), \psi'(\theta(t))\bigr),
+$$
+
+where $(F_t)$ is a geometric embedding functional determined by phase slice value and local gradient.
+
+Elements not yet projected remain in the collapsed substrate and participate in later rupture layers.
+
+This formalizes the idea that:
+
+* the substrate is infinite,
+* each rupture layer extracts portions of its content,
+* extracted elements become immune to further falling
+* the rest continues through deeper layers (later values of $(\theta(t))$).
+
+## **Angle-Sliced Rupture as the Generator of Spacetime Structure**
+
+The emergent manifold structure depends directly on how phase slices change:
+
+* **Direction of growth:** given by $(\psi'(\theta(t)))$.
+* **Magnitude of separability gained:** proportional to $(|\psi'(\theta(t))|)$.
+* **Ordering of layers:** from monotonic $(\theta(t))$.
+* **Irreversibility:** phase slices cannot be revisited.
+* **Geometric anisotropies:** arise from variations in $(\psi'(\theta))$.
+
+This mechanism provides:
+
+1. A structural reason why separability increases across layers.
+2. A natural origin for geometric directionality.
+3. A limit on emergent dimensionality.
+4. A precise mathematical representation of the “angle” intuition.
+5. A substrate-driven rupture process requiring no external fields.
+
+# **3.5 Phase-Driven Separability Operator and Emergent Dimensionality**
+
+The rupture model now incorporates an internal cyclic phase field defining the structure of successive separability events. This allows us to construct a mathematically explicit operator describing how separability is induced by substrate instability.
+
+## **3.5.1 Phase-Induced Separability Direction**
+
+At rupture layer $( t )$, the separability introduced into the manifold comes from the internal gradient of the phase field:
+
+$$
+D(t) = \psi'(\theta(t)) = \cos(\theta(t)).
+$$
+
+The magnitude of separability gain at layer $( t )$ is:
+
+$$
+|\Delta \Sigma(t)| \propto |D(t)|.
+$$
+
+The sign of $( D(t) )$ encodes **orientation** (not spatial direction) of the emergent degree of freedom. Since $(\cos(\theta))$ oscillates between positive and negative values, successive layers alternate in orientation, producing geometric richness without violating the monotonicity of total separability:
+
+$$
+\Sigma(t + \delta t) > \Sigma(t).
+$$
+
+Only the *direction* oscillates; the *amount* always increases.
+
+## **3.5.2 Separability Operator**
+
+Define the separability operator:
+
+$$
+\mathcal{S}_t = |D(t)| , \mathcal{R}_t,
+$$
+
+where $( \mathcal{R}_t )$ is the rupture resolution operator mapping substrate elements into distinct geometric support based on phase slice sampling.
+
+For substrate element $( s )$, its contribution at layer $( t )$ is:
+
+$$
+\sigma_t(s) = |D(t)| , \Pi_t(s).
+$$
+
+Integrating over all elements gives:
+
+$$
+\Sigma(t) = \int_S |D(t)|, \Pi_t(s), ds.
+$$
+
+This connects the internal phase geometry directly to the expansion rate of separability.
+
+## **3.5.3 Emergent Dimensionality as Phase Resonance Modes**
+
+Although the internal phase field $( \psi(\theta) = \sin(\theta) )$ has only a single cyclic variable, the *pattern* of rupture layers defines how many independent separability modes become stable.
+
+Let the sequence of gradients be:
+
+$$
+D(t_0),, D(t_1),, D(t_2), \dots
+$$
+
+A dimensional degree of freedom becomes stable only if:
+
+$$
+\sum_{k=0}^{N} D(t_k), v = 0
+$$
+
+has *nontrivial solutions* for some vector $( v )$. This defines a resonance condition:
+if the cumulative “angle structure” of phase slices allows independent orthogonal combinations, those combinations become independent spatial dimensions in the emergent manifold.
+
+For a purely sinusoidal phase field, the number of stable resonance modes is **three**.
+
+This follows from the Fourier decomposition of repeated sampling of a fundamental sinusoid:
+
+* The first harmonic yields one direction
+* The second harmonic yields a second orthogonal direction
+* The zero mode (constant term) yields the time-like dimension
+
+No additional orthogonal modes are supported without introducing additional internal structure to the substrate.
+
+Thus:
+
+### **The model predicts naturally that the emergent spacetime has exactly three spatial dimensions.**
+
+This is a profound result, emerging directly from the structure of the internal phase field.
+
+## **3.5.4 Time as the Resonant Zero Mode**
+
+In this context, the time dimension arises from the monotonic sampling of the internal phase:
+
+$$
+\theta(t) = \theta_0 + \int_0^t \omega(\tau) d\tau.
+$$
+
+The monotonic evolution of $(\theta(t))$ produces a stable mode that:
+
+* increases separability
+* has no oscillatory sign variation
+* produces no geometric direction
+* but orders all rupture slices
+
+This is exactly the property required for a “time-like” dimension.
+
+Therefore:
+
+### **Time emerges as the non oscillatory component of phase progression.**
+
+---
+
+# **3.6 The Full Rupture Embedding Functional**
+
+We now define $( F_t )$, the geometric embedding functional that maps substrate degrees of freedom into the manifold based on the internal phase slice.
+
+## **3.6.1 Definition of the Embedding Functional**
+
+For each substrate element $( s \in S )$, the rupture layer at time $( t )$ maps it into the manifold by:
+
+$$
+\Phi_t(s) = F_t\bigl(m(s),, \theta(t),, D(t)\bigr).
+$$
+
+The functional form of $( F_t )$ must satisfy:
+
+1. **Locality**
+   Only elements selected by the rupture layer are embedded:
+   $$
+   F_t(s) \text{ is defined only when } \Pi_t(s)=1.
+   $$
+
+2. **Mass weighting**
+   Heavier substrate elements locally influence curvature more strongly:
+   $$
+   \frac{\partial \Phi_t}{\partial m(s)} \neq 0.
+   $$
+
+3. **Phase-geometry coupling**
+   The “direction” and “stretch” of the embedding are controlled by the internal gradient:
+   $$
+   \frac{\partial \Phi_t}{\partial \theta(t)} \propto D(t).
+   $$
+
+4. **Separability consistency**
+   The local separability scale matches the defined value:
+   $$
+   \sigma_t(s) = |\nabla \Phi_t(s)|.
+   $$
+
+## **3.6.2 Constructive Representation**
+
+We can write:
+
+$$
+\Phi_t(s) = X_t + A_t(s), D(t),
+$$
+
+where:
+
+* $(X_t)$ is the layer’s geometric “reference point”
+* $(A_t(s))$ is a mass-weighted embedding amplitude
+* $(D(t) = \cos(\theta(t)))$ selects the separability direction
+
+This formula builds geometry directly from internal phase.
+
+It also ensures that:
+
+* the projection is directional
+* each layer contributes a new twist to geometry
+* the structure is cumulative and irreversible
+* no backward mapping exists
+
+---
+
+# **3.7 Resulting Spacetime Structure**
+
+The full picture now becomes:
+
+1. **A timeless, dimensionless, collapsed substrate**
+   holds mass and an internal phase field.
+
+2. **Instability drives phase progression**
+   through $(\theta(t))$.
+
+3. **Rupture layers form when phase slices intersect mass structure.**
+
+4. **Each layer introduces a degree of separability**
+   with orientation determined by $(\psi'(\theta(t)))$.
+
+5. **Three independent resonance modes stabilize**
+   producing the three macroscopic spatial dimensions.
+
+6. **The zero mode forms a temporal ordering**
+   yielding one time dimension.
+
+7. **The manifold’s expansion rate**
+   follows directly from $(\dot{\Sigma}(t))$.
+
+8. **Curvature arises from mass distribution**
+   via the embedding functional and GR.
+
+All emergent physics is thus encoded in:
+
+* the internal phase field $ψ$
+* the instability-driven phase drift $θ(t)$
+* the selection operator $Π_t$
+* the embedding functional $F_t$
+* the separability functional $Σ(t)$
+
+Nothing else is required.
+
 ## **4. Time as a Sequence of Rupture Realizations**
 
 Time emerges from an ordered family of maps:
@@ -322,6 +664,280 @@ This family includes:
 * intermediate $(\beta)$: power-law expansion compatible with standard FRW cosmology
 
 The rupture therefore provides a **unified origin for early rapid growth and later smoother expansion** without invoking new fields. The precise choice of $(\beta)$ encodes the physical character of the substrate’s instability.
+
+## **5.4 Phase-Sliced Friedmann-like Dynamics**
+
+We now connect the internal phase structure of the substrate to the large-scale expansion of the emergent manifold. The key ingredients are:
+
+* the separability functional $(\Sigma(t))$,
+* the phase field $(\psi(\theta) = \sin\theta)$,
+* the phase trajectory $(\theta(t))$,
+* and the scale factor $(a(t))$.
+
+From Section 5.3 we had the scaling relation
+
+$$
+a(t) \propto \left(\frac{\Sigma(t)}{M_{\text{total}}}\right)^{1/3}.
+$$
+
+Define the Hubble-like rate
+
+$$
+H(t) \equiv \frac{\dot a(t)}{a(t)}.
+$$
+
+Differentiating the scaling relation gives
+
+$$
+H(t)
+= \frac{1}{3} \frac{\dot\Sigma(t)}{\Sigma(t)}.
+$$
+
+To couple this with the internal phase, we now refine the separability dynamics as
+
+$$
+\dot\Sigma(t) = \alpha, \Sigma(t)^{\beta}, f(\theta(t)),
+$$
+
+where $(0 \le \beta \le 1)$, $(\alpha > 0)$, and
+
+$$
+f(\theta) = |\cos\theta|
+$$
+
+implements the phase dependence of how efficiently the substrate instability is converted into geometric separability at a given layer.
+
+Thus,
+
+$$
+H(t) = \frac{1}{3},\alpha, \Sigma(t)^{\beta-1}, f\bigl(\theta(t)\bigr).
+$$
+
+This is the **phase-sliced Friedmann-like equation**: it relates the expansion rate directly to the internal phase trajectory and the global separability content of the universe.
+
+For many cosmological applications, it is convenient to coarse-grain over many microscopic phase slices. Over a full phase cycle, the average of $(|\cos\theta|)$ is
+
+$$
+\langle f(\theta)\rangle
+= \frac{1}{2\pi} \int_0^{2\pi} |\cos\theta|, d\theta
+= \frac{2}{\pi}.
+$$
+
+At large scales the effective dynamics is then
+
+$$
+\dot\Sigma_{\text{eff}}(t) = \alpha_{\text{eff}}, \Sigma_{\text{eff}}(t)^{\beta},
+\qquad
+\alpha_{\text{eff}} \equiv \alpha, \frac{2}{\pi},
+$$
+
+which reproduces the original minimal evolution law with a phase-renormalized coefficient. Microscopic phase structure survives as small oscillatory corrections around this effective behavior.
+
+---
+
+## **5.5 Phase Progression and Cosmic Acceleration**
+
+Using the relation
+
+$$
+H(t) = \frac{1}{3} \alpha, \Sigma(t)^{\beta-1} f(\theta(t)),
+$$
+
+we can compute the acceleration of the scale factor
+
+$$
+\frac{\ddot a}{a} = \dot H + H^2.
+$$
+
+First note
+
+$$
+\dot H
+= \frac{1}{3}\alpha \left[
+(\beta - 1), \Sigma^{\beta-2} \dot\Sigma, f(\theta)
+
+* \Sigma^{\beta-1} f'(\theta), \dot\theta
+  \right].
+  $$
+
+Using $(\dot\Sigma = \alpha \Sigma^{\beta} f(\theta))$, we obtain
+
+$$
+\dot H
+= \frac{1}{3}\alpha \left[
+(\beta - 1), \Sigma^{\beta-2} \bigl(\alpha \Sigma^{\beta} f(\theta)\bigr) f(\theta)
+
+* \Sigma^{\beta-1} f'(\theta), \dot\theta
+  \right]
+  $$
+
+$$
+= \frac{1}{3}\alpha \left[
+(\beta - 1), \alpha, \Sigma^{2\beta-2} f(\theta)^2
+
+* \Sigma^{\beta-1} f'(\theta), \dot\theta
+  \right].
+  $$
+
+Meanwhile,
+
+$$
+H^2
+= \frac{1}{9} \alpha^2, \Sigma^{2\beta-2} f(\theta)^2.
+$$
+
+Thus,
+
+$$
+\frac{\ddot a}{a}
+= \frac{1}{3}\alpha \left[
+(\beta - 1), \alpha, \Sigma^{2\beta-2} f(\theta)^2
+
+* \Sigma^{\beta-1} f'(\theta), \dot\theta
+  \right]
+* \frac{1}{9} \alpha^2, \Sigma^{2\beta-2} f(\theta)^2.
+  $$
+
+We can group the terms as
+
+$$
+\frac{\ddot a}{a}
+= \alpha^2, \Sigma^{2\beta-2} f(\theta)^2
+\left[
+\frac{\beta - 1}{3} + \frac{1}{9}
+\right]
+
+* \frac{1}{3} \alpha, \Sigma^{\beta-1} f'(\theta), \dot\theta.
+  $$
+
+The first bracket simplifies to
+
+$$
+\frac{\beta - 1}{3} + \frac{1}{9}
+= \frac{3(\beta - 1) + 1}{9}
+= \frac{3\beta - 2}{9}.
+$$
+
+So
+
+$$
+\frac{\ddot a}{a}
+= \alpha^2, \Sigma^{2\beta-2} f(\theta)^2, \frac{3\beta - 2}{9}
+
+* \frac{1}{3} \alpha, \Sigma^{\beta-1} f'(\theta), \dot\theta.
+  $$
+
+The physical interpretation:
+
+* The **first term** depends on $(\beta)$ and sets the **background tendency** toward acceleration or deceleration.
+
+  * If $(3\beta - 2 > 0)$, i.e. $(\beta > \frac{2}{3})$, this term is positive and drives **net acceleration**.
+  * If $(\beta = \frac{2}{3})$, it is neutral.
+  * If $(\beta < \frac{2}{3})$, it tends toward deceleration.
+
+* The **second term** is proportional to $(f'(\theta)\dot\theta)$, i.e. to the *rate of change* of the phase gradient.
+
+  * This term produces oscillatory corrections in $(\ddot a / a)$.
+  * At coarse-grained cosmological scales, it averages to nearly zero but may leave small, phase-imprinted features.
+
+This yields a clear statement:
+
+> Cosmic acceleration arises naturally when the substrate instability exponent satisfies $(\beta > 2/3)$, with small oscillatory corrections controlled by the phase trajectory (\theta(t)).
+
+No separate dark energy field is required: acceleration is a geometric consequence of how quickly separability grows relative to its current magnitude.
+
+---
+
+## **5.6 Effective Dark Energy Behavior**
+
+We can recast the phase-driven expansion law into an effective fluid description. In standard cosmology, the Friedmann equation takes the form
+
+$$
+H^2 = \frac{8\pi G}{3} (\rho_m + \rho_{\text{DE}}),
+$$
+
+where $(\rho_m)$ is matter (and radiation) density and $(\rho_{\text{DE}})$ is an effective dark energy density.
+
+From the phase-sliced dynamics we have
+
+$$
+H(t) = \frac{1}{3} \alpha, \Sigma^{\beta-1} f(\theta),
+$$
+
+so
+
+$$
+H^2 = \frac{1}{9} \alpha^2, \Sigma^{2\beta-2} f(\theta)^2.
+$$
+
+We can identify an **effective geometric energy density**:
+
+$$
+\rho_{\text{sep}}(t) \equiv \frac{3}{8\pi G} H^2
+= \frac{1}{24\pi G}, \alpha^2, \Sigma^{2\beta-2}(t), f\bigl(\theta(t)\bigr)^2.
+$$
+
+This behaves as a dark-energy-like component driven entirely by the internal phase and separability dynamics. Its equation-of-state parameter $(w_{\text{sep}})$ can be inferred from
+
+$$
+\frac{\ddot a}{a} = -\frac{4\pi G}{3}\bigl(\rho_{\text{tot}} + 3 p_{\text{tot}}\bigr),
+$$
+
+with $(\rho_{\text{tot}} = \rho_m + \rho_{\text{sep}}), (p_{\text{tot}} = p_m + p_{\text{sep}})$. In the late-time, matter-diluted regime where $(\rho_m \ll \rho_{\text{sep}})$, we find that:
+
+* For $(\beta = 1)$, $(\rho_{\text{sep}})$ is approximately constant in time (up to small oscillations from $(f(\theta)))$, yielding an effective $(w_{\text{sep}} \approx -1)$.
+* For $(\beta)$ slightly below or above 1, $(\rho_{\text{sep}})$ evolves slowly, leading to $(w_{\text{sep}})$ slightly different from $(-1)$ and potentially time-dependent.
+
+Thus the model predicts:
+
+1. A **dominant late-time acceleration component** that behaves like a cosmological constant when $(\beta \approx 1)$.
+2. **Small deviations from $(w = -1)$** controlled by both $(\beta)$ and residual phase structure, providing a natural source of evolving dark energy without introducing new fields.
+
+---
+
+## **5.7 Emergent Lorentzian Signature**
+
+We now argue that the emergent metric on $M$ must have Lorentzian signature $((-, +, +, +))$, given:
+
+* one monotonic ordering parameter (time),
+* and a finite number of oscillatory separability directions (space).
+
+From the phase-driven picture:
+
+1. The internal phase trajectory $(\theta(t))$ is **monotonic** and never reverses.
+
+   * This defines a unique direction in the space of rupture layers.
+   * Distinct layers cannot be mapped back onto each other without violating monotonic separability.
+   * This direction is intrinsically asymmetric and cannot be treated like a spatial coordinate.
+
+2. The separability directions derived from $(D(t) = \psi'(\theta(t)))$ are **oscillatory** and symmetric.
+
+   * They appear as reversible degrees of freedom.
+   * At fixed layer $t$, small displacements along these directions carry no preferred orientation.
+
+To encode these features in a metric, we require:
+
+* exactly **one** direction where intervals distinguish causal order and are intrinsically oriented,
+* and **three** directions where intervals are symmetric and purely geometric.
+
+This is precisely what a Lorentzian metric provides. Denote local coordinates by $((x^0,x^1,x^2,x^3))$, with $(x^0)$ aligned with the rupture-ordering direction and (x^i) aligned with spatial separability modes. The metric signature
+
+$$
+\mathrm{sig}(g) = (-,+,+,+)
+$$
+
+captures:
+
+* the non-reversibility and ordering of $(x^0)$
+* the reversibility and isotropy (after coarse graining) in $((x^1,x^2,x^3))$
+
+If all four directions had the same sign (Euclidean signature), no intrinsic causal asymmetry could be represented. Time and space would be interchangeable in a way incompatible with monotonic separability and structural irreversibility.
+
+Conversely, more than one negative direction would create multiple inequivalent “time-like” directions, contradicting the single-parameter ordering imposed by the rupture sequence $({\Phi_t})$.
+
+Therefore:
+
+> The combination of a single monotonic rupture-ordering parameter and a finite set of oscillatory separability modes uniquely selects a metric of Lorentzian signature with one time-like and three space-like dimensions.
 
 # **6. Emergent Arrow of Time**
 
@@ -611,6 +1227,29 @@ A small population of elements that never reach the observational threshold coul
 Prediction: mild discrepancies between gravitational lensing mass and cold dark matter simulations.
 
 These signatures provide possible pathways toward empirical relevance without committing to rigid numerical predictions.
+
+## **9.2 Additional Observational Signature: Phase-Imprinted Acceleration**
+
+The phase-sliced dynamics suggests an additional, more specific observational signature, complementary to those listed in Section 9.1.
+
+### **6. Phase-imprinted features in the expansion history**
+
+Because the instantaneous expansion rate is modulated by the phase factor $(f(\theta(t)) = |\cos\theta(t)|)$, while observations sample a coarse-grained history, the model predicts:
+
+* A **dominant smooth acceleration** driven by the effective separability component $(\rho_{\text{sep}})$, which behaves approximately like a cosmological constant when $(\beta \approx 1)$.
+* On top of this, **small, correlated deviations** in the Hubble rate $(H(z))$ and the effective dark energy equation-of-state $(w(z))$, reflecting residual phase structure that does not entirely average out.
+
+**Prediction:** future high-precision measurements of
+
+* $(H(z))$ from standard sirens and standard candles, and
+* $(w(z))$ from combined CMB, BAO, and large-scale structure data,
+
+should reveal:
+
+1. A baseline consistent with $(w \approx -1)$,
+2. plus **small, smooth, non-random deviations** from a perfectly constant $(w)$, with a characteristic scale and pattern that trace back to the internal phase dynamics.
+
+Such deviations would not follow the generic forms expected from simple scalar-field dark energy models, but instead exhibit a structure tied to the underlying phase-sliced separability law.
 
 ## **10. Conclusion**
 

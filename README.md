@@ -692,4 +692,4 @@ It becomes physics once the dynamics of $(\Phi_t)$ generate testable predictions
 
 > This repository outlines a conceptual cosmogenesis framework in which finite-density spacetime emerges from a pre-geometric substrate through a rupture-driven transition. No cosmological constant, multiverse, or exotic quantum gravity machinery is assumed. Only mass content, symmetry, instability, and mapping structure.
 
-If you made it this far: welcome to the substrate.+
+If you made it this far: welcome to the substrate.

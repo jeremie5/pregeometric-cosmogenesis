@@ -1,5 +1,7 @@
 # **A Pre-Geometric Substrate Model for the Emergence of Finite-Density Spacetime**
 
+> This work proposes a rupture-based geometrogenesis model in which finite-density spacetime emerges from a non-geometric substrate. It belongs to the broader family of emergent spacetime theories but differs from causal set, loop, and holographic approaches by assuming no initial topology, metric, or adjacency. Geometry, time, Lorentzian signature, and finite densities arise through a monotonic separability transition rather than a bounce or quantum foam.
+
 ##### **Concept by Jérémie Fréreault.**
 ##### **Structured and rendered with AI assistance.**
 ##### **Shared publicly for discussion, critique, and exploration.**

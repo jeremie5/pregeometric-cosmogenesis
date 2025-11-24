@@ -1,6 +1,9 @@
 # **A Pre-Geometric Substrate Model for the Emergence of Finite-Density Spacetime**
 
-**Concept by Jérémie Fréreault. Demonstration by AI.**
+##### **Concept by Jérémie Fréreault.**
+##### **Structured and rendered with AI assistance.**
+##### **Shared publicly for discussion, critique, and exploration.**
+##### **Visual Studio Code is recommended for proper reading.**
 
 ---
 

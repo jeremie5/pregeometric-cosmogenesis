@@ -490,7 +490,21 @@ $$
 $$
 is any fixed, arbitrary, non-geometric label (permitted by unbounded internal reducibility).
 
-This gives a mass-weighted, sign-symmetric internal response.
+$$
+|\psi(\theta)| < \infty,\qquad
+\exists\, \theta_1,\theta_2:\ \psi(\theta_1)\,\psi(\theta_2)<0.
+$$
+
+$\psi(\theta)$ is required only to be bounded and sign-changing on its domain; continuity or periodicity are not assumed.
+
+This gives a mass-weighted, sign-symmetric internal response. The use of $(S^1)$ is not essential; the only required ingredients are an internal ordering parameter and an oscillatory instability function. In particular, one may replace $(S^1)$ by a discrete cyclic set $(\mathbb{Z}_N)$, or even by an abstract index with a sign-changing scalar response, without affecting the core rupture mechanism. The choice of $(S^1)$ simply provides a convenient continuous model with a well-defined mode structure.
+
+The neutrality condition follows automatically if the labels satisfy
+$$
+\sum_{s\in S} m(s)\,\chi(s)=0
+\quad\Longrightarrow\quad
+\sum_{s\in S} C(s,\theta)=0.
+$$
 
 ## **Internal Phase Space**
 

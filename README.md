@@ -179,7 +179,16 @@ $$
 Emergent scale factor:
 
 $$
-a(t)\propto\left(\frac{\Sigma(t)}{M_{\text{total}}}\right)^{1/3}.
+a(t)\propto
+\left(
+\frac{\Sigma(t)}{M_{\text{total}}}
+\right)^{1/d}.
+$$
+
+$$
+V(t)\propto a(t)^{d},
+\qquad
+\rho(t)\propto \frac{1}{a(t)^{d}}.
 $$
 
 ---
@@ -214,9 +223,9 @@ $$
 
 where
 - $(X_t\in M)$ is a reference point,
-- v_t(s)\in T_{X_t}M \text{ is a unit tangent direction assigned to } s,
-- $(A_t(s)>0)$ for $(s\in S_t)$.
-- \|v_t(s)\|_g = 1.
+- $v_t(s)\in T_{X_t}M$ is a unit tangent direction assigned to $s$,
+- $(A_t(s)>0)$ for $(s\in S_t)$,
+- $\,\lVert v_t(s)\rVert_g = 1$
 
 ---
 
@@ -387,7 +396,7 @@ Any geometric interpretation of this state yields a formal infinite density, whi
 
 ### **3.1 Spacetime Manifold**
 
-Let $M$ be a differentiable manifold equipped with a Lorentzian metric $g$. For cosmology, $M$ may be an FRW spacetime, though this is not required. The dimensionality of $M$ is treated as an input rather than a derived property. Determining whether dimensionality can emerge from properties of $S$ is a possible extension of the model.
+Let $M$ be a differentiable manifold equipped with a Lorentzian metric $g$. For cosmology, $M$ may be an FRW spacetime, though this is not required. The rupture framework is dimension-agnostic: all results hold for arbitrary spatial dimensionality $d≥1$. The value of  $d$ is not fixed by the substrate and remains an open physical parameter.
 
 ### **3.2 Rupture as a Phase Transition**
 
@@ -733,12 +742,12 @@ Higher modes average out under coarse sampling because their contribution change
 Thus:
 
 $$
-\dim(\text{spatial}) = 3,
+\dim(\text{spatial}) = d,
 \qquad
 \dim(\text{time}) = 1.
 $$
 
-This dimensionality emerges from the **stability of low-frequency phase-gradient resonances**, not from geometric assumptions.
+This dimensionality emerges from the **stability of low-frequency phase-gradient resonances**, not from geometric assumptions. In this framework, the rupture mechanism is compatible with any finite number of spatial dimensions $d$. The coarse-phase resonance picture suggests how a finite set of separability modes may stabilize, but does not uniquely select $d=3$. Determining whether rupture dynamics constrain d is identified as an open problem.
 
 ## **3.5.4 Time as the Resonant Zero Mode**
 
@@ -1026,10 +1035,10 @@ $$
 The emergent scale factor is defined by:
 
 $$
-a(t) \propto
+a(t)\propto
 \left(
 \frac{\Sigma(t)}{M_{\mathrm{total}}}
-\right)^{1/3}.
+\right)^{1/d}.
 $$
 
 This matches the intuition that tripling separability increases accessible volume.

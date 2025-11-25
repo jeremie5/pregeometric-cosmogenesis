@@ -5,7 +5,7 @@
 ##### **Concept by Jérémie Fréreault.**
 ##### **Structured and rendered with AI assistance.**
 ##### **Shared publicly for discussion, critique, and exploration.**
-##### **Visual Studio Code is recommended for proper reading.**
+##### **Visual Studio Code is recommended for proper rendering of KaTeX notation.**
 
 ---
 
@@ -823,13 +823,13 @@ where:
 
 * $A_t(s)$ is defined only when $\Pi_t(s) = 1$
 * a direction assignment
-  \[
+  $$
     v_t : S_t \to T_{X_t}M,
-  \]
+  $$
   such that
-  \[
+  $$
     \|v_t(s)\|_g = 1 \quad \text{for all } s\in S_t,
-  \]
+  $$
 * a mass-weighted embedding amplitude $A_t(s)$
 * $v_t$ determines orientation within the tangent space
 
